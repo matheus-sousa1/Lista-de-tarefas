@@ -7,6 +7,7 @@ import TodoTask from "./components/TodoTask";
 const App: FC = () => {
   const [task, setTask] = useState<string>("");
   const [deadLine, setDeadLine] = useState<number>(0);
+
   const [todoList, setTodoList] = useState<ITask[]>([]);
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>): void => {
@@ -44,7 +45,7 @@ const App: FC = () => {
           />
           <input
             type="number"
-            placeholder="DeadLine (in days)..."
+            placeholder="Dias limites..."
             name="deadLine"
             value={deadLine}
             onChange={handleChange}
