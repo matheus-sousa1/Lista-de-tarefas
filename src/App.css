@@ -93,3 +93,15 @@ body {
   color: white;
   cursor: pointer;
 }
+
+/* reponsive */
+
+@media screen and (max-width: 700px) {
+  .task {
+    width: 300px;
+  }
+
+  .task button {
+    width: 20px;
+  }
+}
